@@ -1,0 +1,14 @@
+{
+	ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["bismuth","bismuthbronze","blackbronze","brass","copper","cupronickel","stainlesssteel","electrum","gold","iron","meteoriciron","lead","molybdochalkos","silver","steel","tin","tinbronze","zinc","nickel"] },
+	pattern: [[
+		"###_###",
+		"###_###",
+        "###_###",
+        "_______",
+        "###_###",
+		"###_###",
+        "###_###"
+	]],
+	name: "4 Candle Cups",
+	output: { type: "block", code: "candlecup-{metal}-candle0", stacksize: 4   }
+}

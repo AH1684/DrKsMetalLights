@@ -1,0 +1,22 @@
+{
+	"textureWidth": 16,
+	"textureHeight": 16,
+    "textures": {
+		"material": "game:block/metal/ingot/blackbronze"
+	},
+	"elements": [
+		{
+			"name": "PlateBottom",
+			"from": [ 6.5, 0.0, 6.5 ],
+			"to": [ 9.5, 1.0, 9.5 ],
+			"rotationOrigin": [ 6.0, 0.0, 6.0 ],
+			"faces": {
+				"north": { "texture": "#material", "uv": [ 0.0, 0.0, 3.0, 1.0 ], "reflectiveMode": 3 },
+				"east": { "texture": "#material", "uv": [ 0.0, 1.0, 3.0, 2.0 ],"reflectiveMode": 3  },
+				"south": { "texture": "#material", "uv": [ 0.0, 2.0, 3.0, 3.0 ] , "reflectiveMode": 3 },
+				"west": { "texture": "#material", "uv": [ 0.0, 3.0, 3.0, 4.0 ],"reflectiveMode": 3  },
+				"up": { "texture": "#material", "uv": [ 3.0, 0.0, 6.0, 3.0 ], "reflectiveMode": 3  },
+				"down": { "texture": "#material", "uv": [ 3.0, 3.0, 6.0, 6.0 ], "reflectiveMode": 3  }
+			}
+		}
+	]}

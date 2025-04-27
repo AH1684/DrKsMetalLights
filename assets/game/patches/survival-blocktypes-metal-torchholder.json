@@ -1,0 +1,27 @@
+[
+  {
+    "op": "addeach",
+    "path": "/variantgroups/0/states/2",
+    "value": [
+      "bismuthbronze",
+      "blackbronze",
+      "bismuth",
+      "copper",
+      "cupronickel",
+      "electrum",
+      "gold",
+      "iron",
+      "lead",
+      "meteoriciron",
+      "molybdochalkos",
+      "nickel",
+      "silver",
+      "steel",
+      "tin",
+      "tinbronze",
+      "zinc",
+      "stainlesssteel"
+    ],
+    "file": "game:blocktypes/metal/torchholder.json"
+  }
+]

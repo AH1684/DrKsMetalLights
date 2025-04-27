@@ -1,0 +1,80 @@
+{
+  "code": "candlecup",
+  class: "BlockChandelier",
+  behaviors: [{ name: "RightClickPickup"} ],
+  creativeinventory: { "general": ["*-candle0", "*-candle1"], "decorative": ["*-candle0", "*-candle1"] },
+  variantgroups: [
+		{ code:"material", states: ["bismuth","bismuthbronze","blackbronze","brass","copper","cupronickel","stainlesssteel","electrum","gold","iron","meteoriciron","lead","molybdochalkos","silver","steel","tin","tinbronze","zinc","nickel"] },
+        { code: "type", states: ["candle0", "candle1", "candle2", "candle3", "candle4", "candle5", "candle6", "candle7", "candle8"] }
+	],
+    attributes: {
+        shelvable: true
+    },
+    shape: {base: "candlecup/{type}"},
+    heldTpIdleAnimation: "holdbothhands",
+	doNotRenderAtLod2: true,
+	resistance: 0.75,
+	maxStackSize: 8,
+	lightAbsorption: 0,
+    blockmaterial: "Metal",
+    textures: {
+		"candle": { base:"game:block/candle" }
+	},
+	texturesByType: {
+        "candlecup-*":{
+                "material": { "base": "game:block/metal/ingot/{material}"}
+	}},
+	sideopaque: {
+		all: false
+	},
+	sidesolid: {
+		all: false
+	},
+	lightHsvByType: {
+		"candlecup-*-candle0": [7, 7, 0],
+		"candlecup-*-candle1": [7, 7, 7],
+        "candlecup-*-candle2": [7, 7, 7],
+        "candlecup-*-candle3": [7, 7, 7], 
+        "candlecup-*-candle4": [7, 7, 7],
+        "candlecup-*-candle5": [7, 7, 7],
+        "candlecup-*-candle6": [7, 7, 7],
+        "candlecup-*-candle7": [7, 7, 7],
+        "candlecup-*-candle8": [7, 7, 7],
+	},
+	collisionSelectionBox: { x1: 0.40625, y1: 0, z1: 0.40625, x2: 0.59375, y2: 0.0625, z2: 0.59375 },
+	guiTransform: {
+		translation: { x: 0, y: 3, z: 0 },
+		origin: { x: 0.5, y: 0.0625, z: 0.5 },
+		scale: 3
+	},
+	groundTransform: {
+		scale: 3.5
+	},
+	tpHandTransform: {
+		translation: { x: -0.97, y: -0.14, z: -0.63 },
+		rotation: { x: -50, y: 15, z: -104 },
+		origin: { x: 0.5, y: 0.1, z: 0.5 },
+		scale: 0.66
+	},
+	drops: [
+		{
+			type: "item", 
+			code: "game:candle", 
+			quantityByType:  {
+				"*0": { avg: 0 },
+				"*1": { avg: 1 },
+				"*2": { avg: 2 },
+				"*3": { avg: 3 },
+				"*4": { avg: 4 },
+				"*5": { avg: 5 },
+				"*6": { avg: 6 },
+				"*7": { avg: 7 },
+				"*8": { avg: 8 }
+			}
+		},
+		{
+			type: "block",
+			code: "candlecup-{material}-candle0"
+		}
+	],
+}

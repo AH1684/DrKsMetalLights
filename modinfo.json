@@ -1,0 +1,22 @@
+{
+  "Type": 1,
+  "TextureSize": 32,
+  "Name": "Dr. K's Extra Metal Lights",
+  "Version": "2.0.0",
+  "NetworkVersion": null,
+  "Description": "Create lights out of those lying-around alloys.",
+  "Website": "",
+  "CoreMod": false,
+  "ModID": "drkslights",
+  "Authors": [
+    "Dr. Cpl. Klinger"
+  ],
+  "Contributors": [],
+  "Side": "Universal",
+  "RequiredOnClient": true,
+  "RequiredOnServer": true,
+  "Dependencies": {
+  "game": "",
+	"survival": "",
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/ingredient/allowedVariants/-",
+    "value": "cupronickel",
+    "file": "recipes/smithing/plate.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/ingredient/allowedVariants/-",
+    "value": "nickel",
+    "file": "recipes/smithing/plate.json",
+    "side": "Server",
+    "enable": true
+  }
+]

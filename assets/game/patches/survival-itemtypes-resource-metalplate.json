@@ -1,0 +1,9 @@
+[
+  {
+    "op": "remove",
+    "path": "/skipVariants",
+    "file": "itemtypes/resource/metalplate.json",
+    "side": "Server",
+    "enable": true
+  }
+]

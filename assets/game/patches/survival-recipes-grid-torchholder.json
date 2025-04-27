@@ -1,0 +1,45 @@
+[
+  {
+    "op": "add",
+    "path": "/ingredients/I/allowedVariants",
+    "value": [
+      "bismuthbronze",
+      "blackbronze",
+      "bismuth",
+      "brass",
+      "copper",
+      "cupronickel",
+      "electrum",
+      "gold",
+      "iron",
+      "lead",
+      "meteoriciron",
+      "molybdochalkos",
+      "nickel",
+      "silver",
+      "steel",
+      "tin",
+      "tinbronze",
+      "zinc"
+    ],
+    "file": "recipes/grid/torchholder.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/I/name",
+    "value": "material",
+    "file": "recipes/grid/torchholder.json"
+  },
+  {
+    "op": "replace",
+    "path": "/ingredients/I/code",
+    "value": "metalplate-*",
+    "file": "recipes/grid/torchholder.json"
+  },
+  {
+    "op": "replace",
+    "path": "/output/code",
+    "value": "torchholder-{material}-empty-north",
+    "file": "recipes/grid/torchholder.json"
+  }
+]

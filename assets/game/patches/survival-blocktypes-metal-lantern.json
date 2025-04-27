@@ -1,0 +1,218 @@
+[
+  {
+    "op": "add",
+    "path": "/creativeinventoryStacksByType/*-up/0/stacks/-",
+    "value": {
+      "type": "block",
+      "code": "lantern-up",
+      "attributes": {
+        "material": "lead",
+        "lining": "plain",
+        "glass": "quartz"
+      }
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventoryStacksByType/*-up/0/stacks/-",
+    "value": {
+      "type": "block",
+      "code": "lantern-up",
+      "attributes": {
+        "material": "zinc",
+        "lining": "plain",
+        "glass": "quartz"
+      }
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventoryStacksByType/*-up/0/stacks/-",
+    "value": {
+      "type": "block",
+      "code": "lantern-up",
+      "attributes": {
+        "material": "tin",
+        "lining": "plain",
+        "glass": "quartz"
+      }
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventoryStacksByType/*-up/0/stacks/-",
+    "value": {
+      "type": "block",
+      "code": "lantern-up",
+      "attributes": {
+        "material": "nickel",
+        "lining": "plain",
+        "glass": "quartz"
+      }
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventoryStacksByType/*-up/0/stacks/-",
+    "value": {
+      "type": "block",
+      "code": "lantern-up",
+      "attributes": {
+        "material": "cupronickel",
+        "lining": "plain",
+        "glass": "quartz"
+      }
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventoryStacksByType/*-up/0/stacks/-",
+    "value": {
+      "type": "block",
+      "code": "lantern-up",
+      "attributes": {
+        "material": "stainlesssteel",
+        "lining": "plain",
+        "glass": "quartz"
+      }
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/deco-lead",
+    "value": {
+      "base": "block/metal/lantern/lead-deco"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/deco-tin",
+    "value": {
+      "base": "block/metal/lantern/tin-deco"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/deco-zinc",
+    "value": {
+      "base": "block/metal/lantern/zinc-deco"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/deco-nickel",
+    "value": {
+      "base": "block/metal/lantern/nickel-deco"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/deco-cupronickel",
+    "value": {
+      "base": "block/metal/lantern/cupronickel-deco"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/deco-stainlesssteel",
+    "value": {
+      "base": "block/metal/lantern/stainlesssteel-deco"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/lead",
+    "value": {
+      "base": "block/metal/lantern/lead"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/tin",
+    "value": {
+      "base": "block/metal/lantern/tin"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/zinc",
+    "value": {
+      "base": "block/metal/lantern/zinc"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/nickel",
+    "value": {
+      "base": "block/metal/lantern/nickel"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/cupronickel",
+    "value": {
+      "base": "block/metal/lantern/cupronickel"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+  {
+    "op": "add",
+    "path": "/textures/stainlesssteel",
+    "value": {
+      "base": "block/metal/lantern/stainlesssteel"
+    },
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  }
+]
