@@ -10,5 +10,5 @@
         "###_###"
 	]],
 	name: "4 Candle Cups",
-	output: { type: "block", code: "candlecup-{metal}-candle0", stacksize: 4   }
+	output: { type: "block", code: "candlecup-{metal}-up-candle0", stacksize: 4   }
 }

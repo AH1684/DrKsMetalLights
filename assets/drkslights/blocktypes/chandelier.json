@@ -15,17 +15,30 @@
 	variantgroups: 
 	[
         {code: "metal", states: ["bismuth","bismuthbronze","blackbronze","brass","copper","cupronickel","stainlesssteel","electrum","gold","iron","meteoriciron","lead","molybdochalkos","silver","steel","tin","tinbronze","zinc","nickel"]},
+        {code: "variant", states: ["vanilla","arms","ring"]},
 		{ code: "type", states: ["candle0", "candle1", "candle2", "candle3", "candle4", "candle5", "candle6", "candle7", "candle8"] }
 	],
 	creativeinventory: { "general": ["*-candle0", "*-candle8"], "decorative": ["*-candle0", "*-candle8"] },
 	textures: {
-		"candle": { base:"game:block/candle" }
+		"candle": { base:"game:block/candle" },
+        "rope": {base: "game:item/resource/rope"},
+        "plain": {base: "game:block/glass/plain",}
 	},
     texturesByType:{
         "chandelier-*":{
                 "blackbronze": { "base": "game:block/metal/ingot/{metal}"}
 	}},
-	shape: { base: "game:block/metal/chandelier/{type}" },
+	shape: { base:"chandeliers/chandelier-{variant}", ignoreelementsbytype: { 
+    "*0": ["candle1","candle2","candle3","candle4","candle5","candle6","candle7","candle8"],
+    "*1": ["candle2","candle3","candle4","candle5","candle6","candle7","candle8"],
+    "*2": ["candle3","candle4","candle5","candle6","candle7","candle8"],
+    "*3": ["candle4","candle5","candle6","candle7","candle8"],
+    "*4": ["candle5","candle6","candle7","candle8"],
+    "*5": ["candle6","candle7","candle8"],
+    "*6": ["candle7","candle8"],
+    "*7": ["candle8"],
+    "*8": [],
+        } },
 	drawtype: "json",
 	blockmaterial: "Metal",
 	sidesolid: { all: false },
@@ -60,7 +73,7 @@
 		},
 		{
 			type: "block",
-			code: "chandelier-{metal}-candle0"
+			code: "chandelier-{metal}-{variant}-candle0"
 		}
 	],
 	lightAbsorption: 0,

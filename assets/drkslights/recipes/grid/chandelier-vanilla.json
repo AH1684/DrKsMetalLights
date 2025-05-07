@@ -1,0 +1,15 @@
+{
+    "ingredientPattern": "S__,CIC,CIC",
+    "ingredients": {
+        "I": { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["bismuth","bismuthbronze","blackbronze","brass","copper","cupronickel","stainlesssteel","electrum","gold","iron","meteoriciron","lead","molybdochalkos","silver","steel","tin","tinbronze","zinc","nickel"], quantity: 1 },
+        "S": { type: "item", code: "game:saw-*", isTool: true  },
+        "C": { type: "block", code: "candlecup-*-up-candle0",name: "metal", allowedVariants: ["bismuth","bismuthbronze","blackbronze","brass","copper","cupronickel","stainlesssteel","electrum","gold","iron","meteoriciron","lead","molybdochalkos","silver","steel","tin","tinbronze","zinc","nickel"], quantity: 2 },
+        
+    },
+    "width": 3,
+    "height": 3,
+    "output": {
+        "type": "block","code": "chandelier-{metal}-vanilla-candle0","quantity": 1
+    },
+
+}

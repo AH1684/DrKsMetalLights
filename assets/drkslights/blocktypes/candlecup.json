@@ -1,16 +1,37 @@
 {
   "code": "candlecup",
   class: "BlockChandelier",
-  behaviors: [{ name: "RightClickPickup"} ],
-  creativeinventory: { "general": ["*-candle0", "*-candle1"], "decorative": ["*-candle0", "*-candle1"] },
+  behaviors: [{ name: "RightClickPickup"},
+                { name: "OmniAttachable", properties: { 
+			facingCode: "orientation",
+			attachmentAreas: {
+				"down": { x1: 7, y1: 15, z1: 7, x2: 8, y2: 15, z2: 8 },
+				"up": { x1: 4, y1: 0, z1: 4, x2: 11, y2: 0, z2: 11 },
+				"north": { x1: 7, y1: 11, z1: 0, x2: 8, y2: 13, z2: 1 },
+				"east": { x1: 7, y1: 11, z1: 0, x2: 8, y2: 13, z2: 1, rotateY: 90 },
+				"south": { x1: 7, y1: 11, z1: 0, x2: 8, y2: 13, z2: 1, rotateY: 180 },
+				"west": { x1: 7, y1: 11, z1: 0, x2: 8, y2: 13, z2: 1, rotateY: 270 },
+			},
+		}},
+            ],
+  creativeinventory: { "general": ["*-up-candle0", "*-up-candle1"], "decorative": ["*-up-candle0", "*-up-candle1"] },
   variantgroups: [
-		{ code:"material", states: ["bismuth","bismuthbronze","blackbronze","brass","copper","cupronickel","stainlesssteel","electrum","gold","iron","meteoriciron","lead","molybdochalkos","silver","steel","tin","tinbronze","zinc","nickel"] },
-        { code: "type", states: ["candle0", "candle1", "candle2", "candle3", "candle4", "candle5", "candle6", "candle7", "candle8"] }
+		{ code:"material", states: ["bismuth","bismuthbronze","blackbronze","brass","copper","cupronickel","stainlesssteel","electrum","gold","iron",
+"meteoriciron","lead","molybdochalkos","silver","steel","tin","tinbronze","zinc","nickel"] },
+    {code:"orientation", loadFromPropertiesCombine: ["abstract/horizontalorientation", "abstract/verticalorientation"]},
+    { code: "type", states: ["candle0", "candle1", "candle2", "candle3", "candle4", "candle5", "candle6", "candle7", "candle8"] }
 	],
     attributes: {
         shelvable: true
     },
-    shape: {base: "candlecup/{type}"},
+    shapeByType: {
+        "candlecup-*-up-*":{base: "candlecup", offsety: -0.5, ignoreelements:["MountSpike","HangingMount"], overlays:[{base: "candlecup/{type}", offsety: -0.5}]},
+        "candlecup-*-down-*":{base: "candlecup", offsety: -0.1875,ignoreelements:["MountSpike"],overlays:[{base: "candlecup/{type}",offsety: -0.21875}]},
+        "candlecup-*-north-*":{base: "candlecup",offsety: -0.3,offsetz:0.21875, rotateY: 180,ignoreelements:["HangingMount"],overlays:[{base: "candlecup/{type}",offsety: -0.3,offsetz:0.21875, rotateY: 180}]},
+        "candlecup-*-east-*":{base: "candlecup", offsety: -0.3,offsetx:-0.21875, rotateY: 90,ignoreelements:["HangingMount"],overlays:[{base: "candlecup/{type}",offsety: -0.3,offsetx:-0.21875,rotateY: 90}]},
+        "candlecup-*-west-*":{base: "candlecup",offsety: -0.3,offsetx:0.21875, rotateY: 270,ignoreelements:["HangingMount"],overlays:[{base: "candlecup/{type}",offsety: -0.3,offsetx:0.21875,rotateY: 270}]},
+        "candlecup-*-south-*":{base: "candlecup",offsety: -0.3,offsetz:-0.21875, rotateY: 0,ignoreelements:["HangingMount"],overlays:[{base: "candlecup/{type}",offsety: -0.3,offsetz:-0.21875,rotateY: 0}]}
+        },
     heldTpIdleAnimation: "holdbothhands",
 	doNotRenderAtLod2: true,
 	resistance: 0.75,
@@ -33,15 +54,22 @@
 	lightHsvByType: {
 		"candlecup-*-candle0": [7, 7, 0],
 		"candlecup-*-candle1": [7, 7, 7],
-        "candlecup-*-candle2": [7, 7, 7],
-        "candlecup-*-candle3": [7, 7, 7], 
-        "candlecup-*-candle4": [7, 7, 7],
-        "candlecup-*-candle5": [7, 7, 7],
-        "candlecup-*-candle6": [7, 7, 7],
-        "candlecup-*-candle7": [7, 7, 7],
-        "candlecup-*-candle8": [7, 7, 7],
+        "candlecup-*-candle2": [7, 7, 9],
+        "candlecup-*-candle3": [7, 7, 11], 
+        "candlecup-*-candle4": [7, 7, 11],
+        "candlecup-*-candle5": [7, 7, 11],
+        "candlecup-*-candle6": [7, 7, 11],
+        "candlecup-*-candle7": [7, 7, 11],
+        "candlecup-*-candle8": [7, 7, 11],
 	},
-	collisionSelectionBox: { x1: 0.40625, y1: 0, z1: 0.40625, x2: 0.59375, y2: 0.0625, z2: 0.59375 },
+	selectionboxByType:{
+    "candlecup-*-up-*": { x1: 0.35, y1: 0.0, z1: 0.35, x2: 0.65, y2: 0.5, z2: 0.65 },
+    "candlecup-*-down-*": { x1: 0.35, y1: 0.3, z1: 0.35, x2: 0.65, y2: 1.0, z2: 0.65 },
+    "candlecup-*-north-*": { x1: 0.35, y1: 0.0, z1: 0.6, x2: 0.65, y2: 0.65, z2: 1.0 },
+    "candlecup-*-south-*": { x1: 0.35, y1: 0.0, z1: 0.0, x2: 0.65, y2: 0.65, z2: 0.4  },
+    "candlecup-*-east-*": {  x1: 0.0, y1: 0.0, z1: 0.35, x2: 0.4, y2: 0.65, z2: 0.65},
+    "candlecup-*-west-*": {  x1: 0.6, y1: 0.0, z1: 0.35, x2: 1.0, y2: 0.65, z2: 0.65},
+    },
 	guiTransform: {
 		translation: { x: 0, y: 3, z: 0 },
 		origin: { x: 0.5, y: 0.0625, z: 0.5 },
@@ -74,7 +102,11 @@
 		},
 		{
 			type: "block",
-			code: "candlecup-{material}-candle0"
+			code: "candlecup-{material}-up-candle0"
 		}
 	],
+    sidesolid: {
+		all: false
+	},
+    collisionbox: null,
 }

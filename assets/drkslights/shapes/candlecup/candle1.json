@@ -8,49 +8,34 @@
 	"textureSizes": {
 	},
 	"textures": {
-        "candle": "game:block/candle"
 	},
 	"elements": [
 		{
-			"name": "PlateBottom",
-			"from": [ 6.5, 0.0, 6.5 ],
-			"to": [ 9.5, 1.0, 9.5 ],
-			"rotationOrigin": [ 6.0, 0.0, 6.0 ],
+			"name": "Candle",
+			"from": [ 7.0, 9.0, 7.0 ],
+			"to": [ 9.0, 11.0, 9.0 ],
+			"rotationOrigin": [ 7.0, 9.0, 9.0 ],
 			"faces": {
-				"north": { "texture": "#material", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
-				"east": { "texture": "#material", "uv": [ 0.0, 1.0, 3.0, 2.0 ] },
-				"south": { "texture": "#material", "uv": [ 0.0, 2.0, 3.0, 3.0 ] },
-				"west": { "texture": "#material", "uv": [ 0.0, 3.0, 3.0, 4.0 ] },
-				"up": { "texture": "#material", "uv": [ 3.0, 0.0, 6.0, 3.0 ] },
-				"down": { "texture": "#material", "uv": [ 3.0, 3.0, 6.0, 6.0 ] }
-			}
-		},
-		{
-			"name": "Candle lower E",
-			"from": [ 7.0, 1.0, 7.0 ],
-			"to": [ 9.0, 5.0, 9.0 ],
-			"rotationOrigin": [ 7.0, 1.0, 9.0 ],
-			"faces": {
-				"north": { "texture": "#candle", "uv": [ 2.0, 12.0, 4.0, 16.0 ] },
-				"east": { "texture": "#candle", "uv": [ 5.0, 12.0, 7.0, 16.0 ] },
-				"south": { "texture": "#candle", "uv": [ 12.0, 12.0, 14.0, 16.0 ] },
-				"west": { "texture": "#candle", "uv": [ 14.0, 12.0, 16.0, 16.0 ] },
+				"north": { "texture": "#candle", "uv": [ 2.0, 12.0, 4.0, 14.0 ] },
+				"east": { "texture": "#candle", "uv": [ 5.0, 12.0, 7.0, 14.0 ] },
+				"south": { "texture": "#candle", "uv": [ 12.0, 12.0, 14.0, 14.0 ] },
+				"west": { "texture": "#candle", "uv": [ 14.0, 12.0, 16.0, 14.0 ] },
 				"up": { "texture": "#candle", "uv": [ 12.0, 1.0, 14.0, 3.0 ] },
 				"down": { "texture": "#candle", "uv": [ 6.0, 14.0, 8.0, 16.0 ] }
 			},
 			"children": [
 				{
 					"name": "tip",
-					"from": [ 0.8, 4.0, 0.8 ],
-					"to": [ 1.2, 4.5, 1.2 ],
-					"rotationOrigin": [ 0.8, 4.0, 0.8 ],
+					"from": [ 0.8, 2.0, 0.8 ],
+					"to": [ 1.2, 2.3, 1.2 ],
+					"rotationOrigin": [ 0.8, 2.0, 0.8 ],
 					"faces": {
-						"north": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.0, 0.5 ], "glow": 255 },
-						"east": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.0, 0.5 ], "glow": 255 },
-						"south": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.0, 0.5 ], "glow": 255 },
-						"west": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.0, 0.5 ], "glow": 255 },
-						"up": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.0, 0.0 ], "glow": 255 },
-						"down": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.0, 0.0 ], "glow": 255 }
+						"north": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 255 },
+						"east": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 255 },
+						"south": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 255 },
+						"west": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 255 },
+						"up": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 255 },
+						"down": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 255 }
 					}
 				}
 			]

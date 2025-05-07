@@ -1,0 +1,10 @@
+[
+  {
+    "op": "add",
+    "path": "/drksmetallights:v2.0.0",
+    "value": ["/bir remapq chandelier claybricks-fire force"],
+    "file": "blocktypes/metal/lantern.json",
+    "side": "Server",
+    "enable": true
+  },
+]
